@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "test:edge:headless:laptop": "npx cypress run -b edge -C cypress.config.js",
+    "test:edge:headless:mobile": "npx cypress run -b edge -C cypress.mobile.config.js",
+    "test:edge:headed:laptop": "npx cypress run -b edge --headed -C cypress.config.js",
+    "test:edge:headed:mobile": "npx cypress run -b edge --headed -C cypress.mobile.config.js",
+    "test:electron:headless:laptop": "npx cypress run -b electron -C cypress.config.js",
+    "test:electron:headless:mobile": "npx cypress run -b electron -C cypress.mobile.config.js",
+    "test:electron:headed:laptop": "npx cypress run -b electron --headed -C cypress.config.js",
+    "test:electron:headed:mobile": "npx cypress run -b electron --headed -C cypress.mobile.config.js"
   },
   "author": "",
   "license": "ISC",
